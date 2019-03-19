@@ -3,9 +3,7 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Please enter an event!');
-});
+require('./routes/activityRoutes')(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
