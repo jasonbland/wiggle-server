@@ -7,11 +7,15 @@
     "start": "node index.js",
     "server": "nodemon index.js"
   },
-  "author": "",
+  "author": "peabrain",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^1.3.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.19",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path-parser": "^4.2.0"
   }
 }
