@@ -6,6 +6,9 @@ const bodyParser = require('body-parser');
 require('./models/User');
 require('./models/Event');
 
+mongoose.Promise = global.Promise;
+mongoose.connect(keys.mongoURI);
+
 const app = express();
 
 require('./routes/eventsRoutes')(app);
